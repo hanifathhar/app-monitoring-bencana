@@ -1,0 +1,164 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  //rl = env("DATABASE_URL")
+}
+
+//
+
+model tbl_barang {
+  id_barang  Int     @id @default(autoincrement())
+  nm_barang  String
+
+  penerimaan  tbl_penerimaan_bantuan[]
+  pengeluaran tbl_pengeluaran_bantuan[]
+}
+
+model tbl_desa {
+  id_desa      Int     @id @default(autoincrement())
+  nm_desa      String
+  id_kecamatan Int
+
+  kecamatan tbl_kecamatan @relation(fields: [id_kecamatan], references: [id_kecamatan])
+
+  posko     tbl_posko[]
+  kejadian  tbl_kejadian[]
+}
+
+model tbl_kecamatan {
+  id_kecamatan Int     @id @default(autoincrement())
+  nm_kecamatan String
+
+  desa     tbl_desa[]
+  posko    tbl_posko[]
+  kejadian tbl_kejadian[]
+}
+
+//
+//  TABEL POSKO
+//
+
+model tbl_posko {
+  id_posko      Int     @id @default(autoincrement())
+  nm_posko      String
+  id_kecamatan  Int
+  id_desa       Int
+
+  kecamatan tbl_kecamatan @relation(fields: [id_kecamatan], references: [id_kecamatan])
+  desa      tbl_desa      @relation(fields: [id_desa], references: [id_desa])
+
+  penerimaan  tbl_penerimaan_bantuan[]
+  pengeluaran tbl_pengeluaran_bantuan[]
+  user        tbl_user[]
+  kejadian    PoskoKejadian[]
+}
+
+//
+//  TABEL KEJADIAN & KORBAN
+//
+
+model tbl_kejadian {
+  id_kejadian   Int     @id @default(autoincrement())
+  nm_kejadian   String
+  jns_kejadian  String
+  skala         String?
+  tgl_kejadian  DateTime
+  createdAt     DateTime @default(now())
+  id_kecamatan  Int
+  id_desa       Int
+
+  kecamatan     tbl_kecamatan @relation(fields: [id_kecamatan], references: [id_kecamatan])
+  desa          tbl_desa      @relation(fields: [id_desa], references: [id_desa])
+
+  korban        tbl_korban[]
+  kejadian      PoskoKejadian[]
+}
+
+model PoskoKejadian {
+  id          Int      @id @default(autoincrement())
+  id_posko    Int
+  id_kejadian Int
+
+  posko      tbl_posko    @relation(fields: [id_posko], references: [id_posko])
+  kejadian   tbl_kejadian  @relation(fields: [id_kejadian], references: [id_kejadian])
+}
+
+model tbl_korban {
+  id_korban     Int     @id @default(autoincrement())
+  nama_korban   String
+  jk            String
+  umur          Int?
+  id_kejadian   Int
+  status        String?
+  alamat        String?
+  nik           String? @unique
+  kk            String?
+
+  kejadian tbl_kejadian @relation(fields: [id_kejadian], references: [id_kejadian])
+  created_at        DateTime   @default(now())
+  updated_at DateTime @default(now()) @updatedAt
+
+  rumah tbl_rumah[]
+}
+
+//
+//  TABEL TRANSAKSI BANTUAN
+//
+
+model tbl_penerimaan_bantuan {
+  id_terima    Int     @id @default(autoincrement())
+  id_posko     Int
+  jns_bantuan  String
+  id_barang    Int
+  jumlah       Int?
+  satuan       String?
+  nm_pemberi   String?
+
+  posko   tbl_posko  @relation(fields: [id_posko], references: [id_posko])
+  barang  tbl_barang @relation(fields: [id_barang], references: [id_barang])
+}
+
+model tbl_pengeluaran_bantuan {
+  id_keluar    Int     @id @default(autoincrement())
+  id_posko     Int
+  jns_bantuan  String
+  id_barang    Int
+  jumlah       Int?
+  satuan       String?
+  nm_penerima  String?
+
+  posko   tbl_posko  @relation(fields: [id_posko], references: [id_posko])
+  barang  tbl_barang @relation(fields: [id_barang], references: [id_barang])
+}
+
+//
+//  TABEL USER
+//
+
+model tbl_user {
+  id       Int     @id @default(autoincrement())
+  nama     String
+  username String  @unique
+  password String
+  id_posko Int
+
+  posko tbl_posko @relation(fields: [id_posko], references: [id_posko])
+  role  String
+}
+
+
+model tbl_rumah {
+  id_rumah_rusak    Int        @id @default(autoincrement())
+  nik               String
+  jenis_kerusakan   String?
+  keterangan        String?
+
+  // relasi
+  korban            tbl_korban     @relation(fields: [nik], references: [nik])
+
+  created_at        DateTime   @default(now())
+  updated_at        DateTime   @updatedAt
+}

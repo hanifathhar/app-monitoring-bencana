@@ -1,0 +1,31 @@
+### POST USER
+POST http://localhost:3000/api/korban
+Content-Type: application/json
+
+{
+  "nama_korban": "Suparno",
+  "jk": "L",
+  "umur": 45,
+  "id_kejadian": 7,
+  "status": "Hilang"
+}
+
+
+### LOGIN USER
+GET http://localhost:3000/api/ringkasan-perkecamatan
+
+### UPDATE
+PUT http://localhost:3000/api/kejadian/7
+Content-Type: application/json
+
+{
+  "nm_kejadian": "Tanah Lonsor di Desa Garoga Kec. Sipirok",
+  "jns_kejadian": "Tanah Lonsor",
+  "skala": "Berat",
+  "id_kecamatan": 1,
+  "id_desa": 53,
+  "tgl_kejadian": "2025-12-05"
+}
+
+### DELETE posko
+DELETE http://localhost:3000/api/auth/register/5

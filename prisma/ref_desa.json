@@ -1,0 +1,749 @@
+[
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"1;0;0;NON TAPANULI SELATAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"2;1;1;LOBUTAYAS"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"3;1;1;SIGOLANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"4;1;1;BIRU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"5;1;1;SIHULAMBU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"6;1;1;AEK URAT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"7;1;1;HUTA BARU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"8;1;1;AEK LATONG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"9;1;1;TAPUS SIPAGABU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"10;1;1;TOLANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"11;1;1;SILANGKITANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"12;1;1;GORAHUT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"13;1;1;TAPUS GODANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"14;2;2;SILANGKITANG TAMBISKI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"15;2;2;PARAU SORAT SITABO TABO"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"16;2;2;SUNGE SIGIRING GIRING"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"17;2;2;ULU MAMIS SITUNGGALING"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"18;2;2;SIPAGIMBAR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"19;2;2;SIDAPDAP SIMANOSOR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"20;2;2;AEK SIMOTUNG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"21;2;2;SAUT BANUA SIMANOSOR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"22;2;2;BATANG PARSULUMAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"23;2;2;DAMPARAN HAUNATAS"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"24;2;2;SIMANGAMBAT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"25;2;2;SOMBA DEBATA PURBA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"26;2;2;PADANG MANDAILING GARUGUR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"27;2;2;PINTU PADANG MANDALASENA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"28;3;3;DALIHAN NATOLU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"29;3;3;PARDOMUAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"30;3;3;ARSE NAULI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"31;3;3;PINAGAR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"32;3;3;NANGGAR JATI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"33;3;3;AEK HAMINJON"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"34;3;3;NANGGAR JATI HUTA PADANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"35;3;3;NATAMBANG RONCITAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"36;3;3;LANCAT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"37;3;3;SIPOGU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"38;4;4;JANJI MAULI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"39;4;4;BARINGIN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"40;4;4;PARAU SORAT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"41;4;4;SIALA GUNDI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"42;4;4;BARNANG KOLING"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"43;4;4;PARGARUTAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"44;4;4;PANAUNGAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"45;4;4;PANGARIBUAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"46;4;4;PADANG BUJUR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"47;4;4;SIMANINGGIR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"48;4;4;PARAN PADANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"49;4;4;TOLANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"50;4;4;PANGURABAAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"51;4;4;BAGAS LOMBANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"52;4;4;PARAN JULU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"53;4;4;BULU MARIO"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"54;4;4;BATU SATAIL"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"55;4;4;RAMBA SIHASUR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"56;4;4;SIBADOAR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"57;4;4;HASANG MARSADA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"58;4;4;BUNGA BONDAR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"59;4;4;SAMPEAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"60;4;4;SIALAMAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"61;4;4;KILANG PAPAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"62;4;4;SABA BATANG MIHA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"63;4;4;SITUMBA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"64;4;4;SITUMBA JULU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"65;4;4;BATANG TURA JULU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"66;4;4;BATANG TURA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"67;4;4;PARAN DOLOK MARDOMU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"68;4;4;SAROGODUNG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"69;4;4;DOLOK SORDANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"70;4;4;PASAR SIPIROK"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"71;4;4;HUTA SUHUT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"72;4;4;SIPIROK GODANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"73;4;4;AEK BATANG PAYA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"74;4;4;MARSADA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"75;4;4;LUAT LOMBANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"76;4;4;PAHAE AEK SAGALA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"77;4;4;DOLOK SORDANG JULU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"78;5;5;BANDAR HAPINIS"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"79;5;5;HUTA RAJA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"80;5;5;MUARA MANOMPAS"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"81;5;5;PARDAMEAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"82;5;5;TERAPUNG RAYA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"83;5;5;MUARA HUTA RAJA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"84;5;5;MUARA AMPOLU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"85;5;5;SIMARLELAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"86;5;5;MUARA UPU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"87;6;6;GUNUNG BINANGA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"88;6;6;MARANCAR GODANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"89;6;6;SIMANINGGIR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"90;6;6;MARANCAR JULU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"91;6;6;HAU NATAS"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"92;6;6;AEK NABARA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"93;6;6;GAPUK TUA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"94;6;6;PASAR SEMPURNA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"95;6;6;AEK SABAON"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"96;6;6;SUGI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"97;6;6;TANJUNG DOLOK"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"98;6;6;HURABA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"99;7;7;PADANG LANCAT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"100;7;7;SIANGGUNAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"101;7;7;PERK HAPESONG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"102;7;7;HAPESONG LAMA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"103;7;7;SIPENGGENG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"104;7;7;HAPESONG BARU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"105;7;7;PERKEBUNAN SIGALA-GALA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"106;7;7;PERK BATANG TORU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"107;7;7;TELO"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"108;7;7;WEK III BATANG TORU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"109;7;7;WEK II"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"110;7;7;WEK I"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"111;7;7;WEK IV BATANG TORU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"112;7;7;NAPA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"113;7;7;AEK PINING"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"114;7;7;SUMURAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"115;7;7;BATU HULA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"116;7;7;HUTA GODANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"117;7;7;GAROGA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"118;7;7;BATU HORING"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"119;7;7;AEK NGADOL NAULI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"120;7;7;SISIPA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"121;7;7;HUTABARU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"122;8;8;SANGKUNUR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"123;8;8;TINDOAN LAUT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"124;8;8;RIANIATE"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"125;8;8;MALOMBU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"126;8;8;BATU GODANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"127;8;8;AEK PARDOMUAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"128;8;8;BANDAR TARUTUNG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"129;8;8;PERKEBUNAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"130;8;8;SIMATOHIR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"131;8;8;SIMATANIARI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"132;9;9;SIUHOM"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"133;9;9;PARSALAKAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"134;9;9;SIALOGO"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"135;9;9;LEMBAH LUBUK RAYA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"136;9;9;SITARA TOIT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"137;9;9;LOBU LAYAN SIGORDANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"138;9;9;AEK NABARA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"139;9;9;SIBANGKUA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"140;9;9;SIGUMURU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"141;9;9;SITINJAK"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"142;9;9;SIMATORKIS SISOMA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"143;9;9;PANOBASAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"144;9;9;PANOBASAN LOMBANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"145;9;9;SISUNDUNG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"146;10;10;SIHUIK KUIK"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"147;10;10;AEK NATAS"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"148;10;10;GUNUNG BARINGIN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"149;10;10;DOLOK GODANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"150;10;10;KELURAHAN SIMARPINGGAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"151;10;10;KELURAHAN TAPIAN NAULI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"152;10;10;TANDIHAT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"153;10;10;SIHOPUR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"154;10;10;PERK. SIMARPINGGAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"155;10;10;SIAMPORIK DOLOK"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"156;10;10;SIBONG BONG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"157;10;10;SIAMPORIK LOMBANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"158;10;10;KELURAHAN NAPA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"159;10;10;PINTU PADANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"160;10;10;SINYIOR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"161;10;10;SITUMBAGA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"162;10;10;KELURAHAN PARDOMUAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"163;11;11;SIJUNGKANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"164;11;11;HURABA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"165;11;11;HUTA GINJANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"166;11;11;PARGARUTAN JULU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"167;11;11;PARGARUTAN TONGA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"168;11;11;PANOMPUAN JAE"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"169;11;11;PARGARUTAN JAE"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"170;11;11;PASAR PARGARUTAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"171;11;11;PARGARUTAN DOLOK"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"172;11;11;PAL XI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"173;11;11;MARISI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"174;11;11;PANOMPUAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"175;11;11;BATANG TURA SIRUMAMBE"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"176;11;11;SANGGAPATI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"177;11;11;LANTOSAN ROGAS"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"178;12;12;KOTA TUA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"179;12;12;HAREAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"180;12;12;LUMBAN RATUS"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"181;12;12;SISOMA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"182;12;12;INGUL JAE"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"183;12;12;LUMBAN JABI-JABI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"184;12;12;PURBATUA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"185;12;12;HUTARAJA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"186;12;12;PANABARI HUTA TONGA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"187;12;12;SITUMBA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"188;12;12;BATU HORPAK"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"189;12;12;AEK KAHOMBU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"190;12;12;TANJUNG MEDAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"191;12;12;SIMANINGGIR"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"192;12;12;PANINDOAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"193;12;12;AEK UNCIM"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"194;12;12;AEK PARUPUK"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"195;13;13;AEK BADAK JULU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"196;13;13;AEK BADAK JAE"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"197;13;13;AEK LIBUNG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"198;13;13;HUTA PARDOMUAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"199;13;13;BANGE"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"200;13;13;TOLANG JAE"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"201;13;13;MONDANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"202;13;13;JANJI MAULI BARINGIN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"203;13;13;TOLANG JULU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"204;13;13;SIPANGE GODANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"205;13;13;SIPANGE JULU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"206;13;13;SIALANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"207;13;13;SOMANGGAL PARMONANGAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"208;13;13;LUMBAN HUAYAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"209;13;13;SAYUR MATINGGI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"210;13;13;SILAIYA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"211;13;13;SILAIYA TANJUNG LEUK"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"212;13;13;SIPANGE SIUNJAM"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"213;13;13;BULU GADING"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"214;14;14;PADANG KAHOMBU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"215;14;14;HUTA PADANG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"216;14;14;HURASE"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"217;14;14;SIGULANG LOSUNG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"218;14;14;PASAR LAMA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"219;14;14;SIGALANGAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"220;14;14;JANJI MANAON"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"221;14;14;BARGOT TOPONG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"222;14;14;SORIK"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"223;14;14;SIDADI II"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"224;14;14;SIDADI I"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"225;14;14;TAHALAK UJUNG GADING"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"226;14;14;AEK GUNUNG"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"227;14;14;SIBULELE MUARA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"228;14;14;SITAMPA SIMATORAS"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"229;14;14;SORI MADINGIN PP"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"230;14;14;BANGUN PURBA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"231;14;14;KELURAHAN PINTU PADANG II"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"232;14;14;AEK NAULI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"233;14;14;KELURAHAN PINTU PADANG I"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"234;14;14;BENTENG HURABA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"235;15;15;SIPANGKO"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"236;15;15;BASILAM BARU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"237;15;15;MUARA TAIS II"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"238;15;15;BINTUJU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"239;15;15;MUARA TAIS I"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"240;15;15;PANGARIBUAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"241;15;15;PASIR MATOGU"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"242;15;15;PARGUMBANGAN"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"243;15;15;MUARA TAIS III"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"244;15;15;SORIMANAON"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"245;15;15;TATENGGER"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"246;15;15;MUARA PURBA NAULI"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"247;15;15;HUTA TONGA"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"248;15;15;JANJI MAULI MT"
+    },
+    {
+        "id;kdkecamatan;kddesa;nmdesa":"249;15;15;HUTA HOLBUNG"
+    }
+]
