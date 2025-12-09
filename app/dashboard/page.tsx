@@ -28,6 +28,8 @@ import {
   Home,
 } from "lucide-react";
 
+import KorbanBarChart from "./BarChart";
+
 // ===================== CSS BLINK =====================
 const blinkStyle = `
 @keyframes blink {
@@ -209,43 +211,41 @@ export default function DashboardPage() {
       {/* FIX: Tinggi wajib definite agar ResponsiveContainer tidak collapse */}
       <div className="w-full h-[300px]">
         <ResponsiveContainer width="100%" height="100%">
-          <PieChart>
-            <Pie
-              data={[
-                { name: "Luka", value: korban.luka },
-                { name: "Meninggal", value: korban.meninggal },
-                { name: "Hilang", value: korban.hilang },
-                { name: "Mengungsi", value: korban.mengungsi },
-              ]}
-              cx="50%"
-              cy="50%"
-              outerRadius={110}
-              label
-              dataKey="value"
-            >
-              <Cell fill="#facc15" />
-              <Cell fill="#dc2626" />
-              <Cell fill="#3b82f6" />
-              <Cell fill="#22c55e" />
-            </Pie>
+  <BarChart
+    data={[
+      { name: "Luka", value: korban.luka, fill: "#facc15" },
+      { name: "Meninggal", value: korban.meninggal, fill: "#dc2626" },
+      { name: "Hilang", value: korban.hilang, fill: "#3b82f6" },
+      { name: "Mengungsi", value: korban.mengungsi, fill: "#22c55e" },
+    ]}
+  >
+    <CartesianGrid strokeDasharray="3 3" />
 
-            <Tooltip
-              content={({ payload }) => {
-                if (!payload || payload.length === 0) return null;
-                const d = payload[0];
-                return (
-                  <div className="bg-white p-3 rounded-lg shadow border text-sm">
-                    <p className="font-semibold">{d.name}</p>
-                    <p>Total: {d.value}</p>
-                    <p className="text-gray-500">
-                      {(d.percent * 100).toFixed(1)}%
-                    </p>
-                  </div>
-                );
-              }}
-            />
-          </PieChart>
-        </ResponsiveContainer>
+    <XAxis dataKey="name" />
+    <YAxis />
+
+    <Tooltip
+      content={({ payload }) => {
+        if (!payload || payload.length === 0) return null;
+        const d = payload[0];
+        return (
+          <div className="bg-white p-3 rounded-lg shadow border text-sm">
+            <p className="font-semibold">{d.payload.name}</p>
+            <p>Total: {d.value}</p>
+          </div>
+        );
+      }}
+    />
+
+    <Bar dataKey="value">
+      <Cell fill="#facc15" />
+      <Cell fill="#dc2626" />
+      <Cell fill="#3b82f6" />
+      <Cell fill="#22c55e" />
+    </Bar>
+  </BarChart>
+</ResponsiveContainer>
+
       </div>
     </div>
 
