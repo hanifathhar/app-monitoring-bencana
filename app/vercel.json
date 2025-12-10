@@ -1,9 +1,7 @@
 {
-  "builds": [
-    { "src": "package.json", "use": "@vercel/node" }
-  ],
+  "framework": "nextjs",
   "env": {
+    "PRISMA_CLIENT_ENGINE_TYPE": "binary",
     "PRISMA_GENERATE_SKIP_AUTOINSTALL": "1"
-  },
-  "buildCommand": "npx prisma generate && next build"
+  }
 }
