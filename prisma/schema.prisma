@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url = env("DATABASE_URL")
+  url      = env("DATABASE_URL")
 }
 
 //
@@ -47,8 +47,8 @@ model tbl_posko {
   id_kecamatan  Int
   id_desa       Int
 
-  kecamatan tbl_kecamatan @relation(fields: [id_kecamatan], references: [id_kecamatan])
-  desa      tbl_desa      @relation(fields: [id_desa], references: [id_desa])
+  kecamatan tbl_kecamatan @relation(fields: [id_kecamatan], references: [id_kecamatan], onDelete: Cascade, onUpdate: Cascade)
+  desa      tbl_desa      @relation(fields: [id_desa], references: [id_desa], onDelete: Cascade, onUpdate: Cascade)
 
   penerimaan  tbl_penerimaan_bantuan[]
   pengeluaran tbl_pengeluaran_bantuan[]
@@ -70,8 +70,8 @@ model tbl_kejadian {
   id_kecamatan  Int
   id_desa       Int
 
-  kecamatan     tbl_kecamatan @relation(fields: [id_kecamatan], references: [id_kecamatan])
-  desa          tbl_desa      @relation(fields: [id_desa], references: [id_desa])
+  kecamatan     tbl_kecamatan @relation(fields: [id_kecamatan], references: [id_kecamatan], onDelete: Cascade, onUpdate: Cascade)
+  desa          tbl_desa      @relation(fields: [id_desa], references: [id_desa], onDelete: Cascade, onUpdate: Cascade)
 
   korban        tbl_korban[]
   kejadian      PoskoKejadian[]
@@ -82,8 +82,10 @@ model PoskoKejadian {
   id_posko    Int
   id_kejadian Int
 
-  posko      tbl_posko    @relation(fields: [id_posko], references: [id_posko])
-  kejadian   tbl_kejadian  @relation(fields: [id_kejadian], references: [id_kejadian])
+  posko      tbl_posko    @relation(fields: [id_posko], references: [id_posko], onDelete: Cascade, onUpdate: Cascade)
+  kejadian   tbl_kejadian  @relation(fields: [id_kejadian], references: [id_kejadian], onDelete: Cascade, onUpdate: Cascade)
+
+  @@unique([id_posko, id_kejadian])
 }
 
 model tbl_korban {
@@ -97,7 +99,7 @@ model tbl_korban {
   nik           String? @unique
   kk            String?
 
-  kejadian tbl_kejadian @relation(fields: [id_kejadian], references: [id_kejadian])
+  kejadian tbl_kejadian @relation(fields: [id_kejadian], references: [id_kejadian], onDelete: Cascade, onUpdate: Cascade)
   created_at        DateTime   @default(now())
   updated_at DateTime @default(now()) @updatedAt
 
@@ -117,8 +119,8 @@ model tbl_penerimaan_bantuan {
   satuan       String?
   nm_pemberi   String?
 
-  posko   tbl_posko  @relation(fields: [id_posko], references: [id_posko])
-  barang  tbl_barang @relation(fields: [id_barang], references: [id_barang])
+  posko   tbl_posko  @relation(fields: [id_posko], references: [id_posko], onDelete: Cascade, onUpdate: Cascade)
+  barang  tbl_barang @relation(fields: [id_barang], references: [id_barang], onDelete: Restrict, onUpdate: Cascade)
 }
 
 model tbl_pengeluaran_bantuan {
@@ -130,8 +132,8 @@ model tbl_pengeluaran_bantuan {
   satuan       String?
   nm_penerima  String?
 
-  posko   tbl_posko  @relation(fields: [id_posko], references: [id_posko])
-  barang  tbl_barang @relation(fields: [id_barang], references: [id_barang])
+  posko   tbl_posko  @relation(fields: [id_posko], references: [id_posko], onDelete: Cascade, onUpdate: Cascade)
+  barang  tbl_barang @relation(fields: [id_barang], references: [id_barang], onDelete: Restrict, onUpdate: Cascade)
 }
 
 //
@@ -145,7 +147,7 @@ model tbl_user {
   password String
   id_posko Int
 
-  posko tbl_posko @relation(fields: [id_posko], references: [id_posko])
+  posko tbl_posko @relation(fields: [id_posko], references: [id_posko], onDelete: Cascade, onUpdate: Cascade)
   role  String
 }
 
@@ -157,8 +159,10 @@ model tbl_rumah {
   keterangan        String?
 
   // relasi
-  korban            tbl_korban     @relation(fields: [nik], references: [nik])
+  korban            tbl_korban     @relation(fields: [nik], references: [nik], onDelete: Cascade, onUpdate: Cascade)
 
   created_at        DateTime   @default(now())
   updated_at        DateTime   @updatedAt
+
+  @@index([nik])
 }
