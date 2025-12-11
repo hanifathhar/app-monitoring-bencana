@@ -96,7 +96,7 @@ export default function DashboardPage() {
     };
 
     const fetchKorban = async () => {
-      const res = await fetch("/api/ringkasan");
+      const res = await fetch("/api/rekap");
       const data = await res.json();
 
       setKorban({
@@ -114,22 +114,22 @@ export default function DashboardPage() {
     };
 
     const fetchKecamatan = async () => {
-      const res = await fetch("/api/ringkasan-perkecamatan");
+      const res = await fetch("/api/rekap-kecamatan");
       const data = await res.json();
 
       const mapped = data.map((item: any) => ({
         kecamatan: item.nm_kecamatan,
-        total: item.total_korban,
-        meninggal: item.total_meninggal,
-        luka: item.total_luka,
-        hilang: item.total_hilang,
-        mengungsi: item.total_mengungsi,
-        totalkejadian: item.total_kejadian,
+        total: Number(item.total_korban),
+        meninggal: Number(item.total_meninggal),
+        luka: Number(item.total_luka),
+        hilang: Number(item.total_hilang),
+        mengungsi: Number(item.total_mengungsi),
+        totalkejadian: Number(item.total_kejadian),
 
-        rumahrusak: item.total_rumah_rusak,
-        rusakringan: item.total_rusak_ringan,
-        rumahhilang: item.total_rumah_hilang,
-        rusakberat: item.total_rusak_berat,
+        rumahrusak: Number(item.total_rumah_rusak),
+        rusakringan: Number(item.total_rusak_ringan),
+        rumahhilang: Number(item.total_rumah_hilang),
+        rusakberat: Number(item.total_rusak_berat),
       }));
 
       setDataKecamatan(mapped);
