@@ -58,6 +58,8 @@ export default function Sidebar({
     { label: "Posko", icon: <Home size={18} />, href: "/posko", roles: ["ADMIN"] },
   ];
 
+  //
+
   // Filter menu sesuai role
   const menuItems = role ? allMenus.filter((item) => item.roles.includes(role)) : [];
 
