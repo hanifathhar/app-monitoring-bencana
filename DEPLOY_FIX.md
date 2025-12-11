@@ -67,6 +67,23 @@ Vercel akan auto-deploy saat ada push ke GitHub. Atau manual:
 
 ## 🐛 Troubleshooting
 
+### Error: "ERR_PNPM_OUTDATED_LOCKFILE Cannot install with frozen-lockfile"
+**Root Cause:** `pnpm-lock.yaml` tidak sinkron dengan `package.json`
+
+**Solusi:**
+```powershell
+# Regenerate pnpm-lock.yaml
+Remove-Item pnpm-lock.yaml
+pnpm install --ignore-scripts
+
+# Commit lockfile baru
+git add pnpm-lock.yaml
+git commit -m "fix: update pnpm-lock.yaml"
+git push origin main
+```
+
+**Di vercel.json:** Sudah tidak perlu `installCommand` dan `--no-frozen-lockfile` lagi. Biarkan Vercel menggunakan lockfile yang sudah di-update.
+
 ### Error: "pnpm install exited with 1"
 **Solusi:**
 - Pastikan `.npmrc` sudah ada di root project
