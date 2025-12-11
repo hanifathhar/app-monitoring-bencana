@@ -299,10 +299,19 @@ export default function DashboardPage() {
           </h2>
 
           <section className="grid grid-cols-1 sm:grid-cols-4 gap-4"> {/* TOTAL */} 
-            <div className="bg-white p-5 rounded-xl shadow flex items-center gap-4"> 
-              <div className="bg-red-100 p-3 rounded-full"> 
-                <Home className="text-red-600" size={26} /> </div> <div> <p className="text-gray-500 text-sm">Total Rumah Terdampak</p> 
-                <h3 className="text-3xl font-bold text-red-600 mt-1"> {rumah.totalrumah} </h3> </div> </div> {/* RUSAK RINGAN */} 
+                <div
+                  className="bg-white p-5 rounded-xl shadow flex items-center gap-4"
+                  style={{ animation: "blink 2.2s infinite" }}
+                >
+                  <div className="bg-blue-100 p-3 rounded-full">
+                    <Home className="text-blue-600" size={26} />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 text-sm">Total Rumah Terdampak</p>
+                    <h3 className="text-3xl font-bold text-blue-600 mt-1">{rumah.totalrumah}</h3>
+                    <p className="text-xs text-gray-400">Realtime update...</p>
+                  </div>
+                </div>
                 <RumahCard icon={<Home size={26} />} title="Rusak Ringan" value={dataKecamatan.reduce((a, b) => a + b.rusakringan, 0)} color="green" /> {/* RUSAK BERAT */} 
                 <RumahCard icon={<Home size={26} />} title="Rusak Berat" value={dataKecamatan.reduce((a, b) => a + b.rusakberat, 0)} color="red" /> {/* HILANG/HANYUT */} 
                 <RumahCard icon={<Home size={26} />} title="Hilang/Hanyut" value={dataKecamatan.reduce((a, b) => a + b.rumahhilang, 0)} color="yellow" /> 
@@ -381,29 +390,17 @@ export default function DashboardPage() {
         <thead className="bg-gray-100 sticky top-0">
           <tr>
             <th className="p-2 text-left border">Kecamatan</th>
-            <th className="p-2 text-center border">Ringan</th>
-            <th className="p-2 text-center border">Berat</th>
-            <th className="p-2 text-center border">Hilang</th>
-            <th className="p-2 text-center border">Total</th>
+            <th className="p-2 text-center border">Rusak Ringan</th>
+            <th className="p-2 text-center border">Rusak Berat</th>
+            <th className="p-2 text-center border">Hilang/Hanyut</th>
+            <th className="p-2 text-center border">Total Terdampak</th>
           </tr>
         </thead>
 
         <tbody>
-          {dataKecamatan
-            .filter(
-              (item) =>
-                item.rusakringan +
-                  item.rumahhilang +
-                  item.rusakberat >
-                0
-            )
-            .map((item, i) => {
-              const total =
-                item.rusakringan +
-                item.rusakberat +
-                item.rumahhilang;
+            {dataKecamatan.map((item, i) => (
 
-              return (
+              
                 <tr key={i} className="border-b hover:bg-gray-50">
                   <td className="p-2 border">{item.kecamatan}</td>
                   <td className="p-2 text-center border text-green-600">
@@ -416,11 +413,10 @@ export default function DashboardPage() {
                     {item.rumahhilang}
                   </td>
                   <td className="p-2 text-center border font-semibold">
-                    {total}
+                   {item.total = item.rusakringan + item.rusakberat + item.rumahhilang}
                   </td>
                 </tr>
-              );
-            })}
+               ))}
         </tbody>
       </table>
     </div>
