@@ -14,7 +14,7 @@ node-linker=hoisted
 ### 2. **package.json**
 - ✅ Tambah `engines` field (Node >= 18.17.0, pnpm >= 8.0.0)
 - ✅ Hapus `bcrypt` (native module bermasalah), pakai `bcryptjs` saja (v2.4.3)
-- ✅ Downgrade Next.js 16 → 15.1.0 (lebih stable)
+- ✅ **Upgrade Next.js 15.1.0 → 15.5.7** (fix CVE-2025-66478 security vulnerability)
 - ✅ Downgrade React 19 → 18.3.1 (kompatibilitas lebih baik)
 - ✅ Downgrade Zod 4 → 3.23.8 (stable version)
 - ✅ Downgrade Prisma 6.18.0 → 5.22.0 (fix schema.prisma compatibility)
@@ -66,6 +66,11 @@ Vercel akan auto-deploy saat ada push ke GitHub. Atau manual:
 3. Klik "Redeploy" pada deployment terakhir
 
 ## 🐛 Troubleshooting
+
+### Error: "Vulnerable version of Next.js detected (CVE-2025-66478)"
+**Root Cause:** Next.js versi 15.1.x hingga 15.4.x memiliki security vulnerability
+
+**Solusi:** ✅ Sudah diupgrade ke Next.js 15.5.7 (patched version)
 
 ### Error: "ERR_PNPM_OUTDATED_LOCKFILE Cannot install with frozen-lockfile"
 **Root Cause:** `pnpm-lock.yaml` tidak sinkron dengan `package.json`
