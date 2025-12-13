@@ -1,21 +1,45 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
-import Image from "next/image";
 import { Eye, EyeOff, CheckCircle, XCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+const SLIDES = [
+  {
+    title: "Banjir Bandang",
+    desc: "Bencana banjir bandang melanda beberapa kecamatan di Tapanuli Selatan.",
+  },
+  {
+    title: "Tanah Longsor",
+    desc: "Wilayah perbukitan Tapsel rawan longsor saat curah hujan tinggi.",
+  },
+  {
+    title: "Angin Puting Beliung",
+    desc: "Puluhan rumah warga mengalami kerusakan akibat angin kencang.",
+  },
+];
+
 export default function LoginPage() {
-  const [username, setUsetname] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [notif, setNotif] = useState<{ type: "success" | "error"; message: string } | null>(null);
+  const [slideIndex, setSlideIndex] = useState(0);
+
   const router = useRouter();
+
+  /* 🔄 AUTO SLIDER */
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlideIndex((prev) => (prev + 1) % SLIDES.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,13 +51,13 @@ export default function LoginPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
-        credentials: "include", // ⬅️ Tambahkan ini
+        credentials: "include",
       });
 
       const data = await res.json();
 
       if (!res.ok) {
-        setNotif({ type: "error", message: data.error || "Login gagal, periksa kembali Username atau password." });
+        setNotif({ type: "error", message: data.error || "Login gagal." });
       } else {
         setNotif({ type: "success", message: "Login berhasil! Mengarahkan ke dashboard..." });
         setTimeout(() => router.push("/dashboard"), 1500);
@@ -47,71 +71,45 @@ export default function LoginPage() {
 
   return (
     <div className="flex h-screen overflow-hidden">
-      {/* BAGIAN KIRI: FORM LOGIN */}
+      {/* KIRI: FORM LOGIN */}
       <motion.div
-        initial={{ x: -50, opacity: 0 }}
+        initial={{ x: -40, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
         className="flex flex-col justify-center items-center w-full md:w-1/2 bg-white px-8 md:px-16 relative"
       >
         <div className="w-full max-w-sm space-y-6">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-3xl font-bold text-gray-800 text-center"
-          >
+          <h2 className="text-3xl font-bold text-gray-800 text-center">
             Selamat Datang
-          </motion.h2>
+          </h2>
+          <p className="text-center text-gray-500">
+            Silakan masuk untuk melanjutkan
+          </p>
 
-          <motion.p
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="text-center text-gray-500"
-          >
-            Silakan masuk untuk melanjutkan ke dashboard
-          </motion.p>
-
-          <motion.form
-            onSubmit={handleSubmit}
-            className="space-y-5 mt-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-          >
+          <form onSubmit={handleSubmit} className="space-y-5 mt-6">
             <div>
-              <Label htmlFor="nip" className="text-gray-700">
-                Username
-              </Label>
+              <Label>Username</Label>
               <Input
-                id="username"
-                type="text"
-                placeholder="Masukkan Username"
                 value={username}
-                onChange={(e) => setUsetname(e.target.value)}
+                onChange={(e) => setUsername(e.target.value)}
+                placeholder="Masukkan username"
                 required
-                className="mt-1"
               />
             </div>
 
             <div className="relative">
-              <Label htmlFor="password" className="text-gray-700">
-                Password
-              </Label>
+              <Label>Password</Label>
               <Input
-                id="password"
                 type={showPassword ? "text" : "password"}
-                placeholder="Masukkan password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                placeholder="Masukkan password"
                 required
-                className="mt-1 pr-10"
+                className="pr-10"
               />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-9 text-gray-500 hover:text-gray-700"
+                className="absolute right-3 top-9 text-gray-500"
               >
                 {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
               </button>
@@ -119,25 +117,22 @@ export default function LoginPage() {
 
             <Button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 transition text-white font-semibold"
               disabled={loading}
+              className="w-full bg-blue-600 hover:bg-blue-700"
             >
               {loading ? "Memproses..." : "Login"}
             </Button>
-          </motion.form>
-
-          
+          </form>
         </div>
 
-        {/* NOTIFIKASI */}
+        {/* NOTIF */}
         <AnimatePresence>
           {notif && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.4 }}
-              className={`absolute bottom-8 flex items-center gap-2 px-4 py-2 rounded-lg shadow-lg text-white text-sm ${
+              className={`absolute bottom-8 flex items-center gap-2 px-4 py-2 rounded-lg text-white ${
                 notif.type === "success" ? "bg-green-600" : "bg-red-600"
               }`}
             >
@@ -148,33 +143,38 @@ export default function LoginPage() {
         </AnimatePresence>
       </motion.div>
 
-      {/* BAGIAN KANAN: GAMBAR */}
-      <motion.div
-        initial={{ x: 50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="hidden md:flex w-1/2 bg-gradient-to-tr from-blue-500 to-indigo-600 items-center justify-center relative overflow-hidden"
-      >
-        
-        <div className="absolute z-20 text-white px-10 text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="text-4xl font-bold mb-4"
+      {/* KANAN: SLIDER BENCANA */}
+      <div className="hidden md:flex w-1/2 bg-gradient-to-tr from-blue-600 to-indigo-700 items-center justify-center relative">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={slideIndex}
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -40 }}
+            transition={{ duration: 0.6 }}
+            className="text-white text-center px-10 max-w-lg"
           >
-            APP
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
-            className="text-lg text-gray-100"
-          >
-            Aplikasi Monitoring Bencana
-          </motion.p>
+            <h2 className="text-4xl font-bold mb-4">
+              {SLIDES[slideIndex].title}
+            </h2>
+            <p className="text-lg text-gray-100">
+              {SLIDES[slideIndex].desc}
+            </p>
+          </motion.div>
+        </AnimatePresence>
+
+        {/* DOT INDICATOR */}
+        <div className="absolute bottom-10 flex gap-2">
+          {SLIDES.map((_, i) => (
+            <span
+              key={i}
+              className={`w-3 h-3 rounded-full ${
+                i === slideIndex ? "bg-white" : "bg-white/40"
+              }`}
+            />
+          ))}
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 }
