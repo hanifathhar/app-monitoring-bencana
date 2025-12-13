@@ -424,7 +424,6 @@ export default function DataRumahPage() {
                         <TableHead>NIK</TableHead>
                         <TableHead>KK</TableHead>
                         <TableHead>Jenis Kerusakan</TableHead>
-                        <TableHead>Keterangan</TableHead>
                         <TableHead>Alamat</TableHead>
                         <TableHead>Desa</TableHead>
                         <TableHead>Kecamatan</TableHead>
@@ -439,7 +438,6 @@ export default function DataRumahPage() {
                         <TableCell>{s.nik}</TableCell>
                         <TableCell>{s.kk}</TableCell>
                         <TableCell>{s.jenis_kerusakan}</TableCell>
-                        <TableCell>{s.keterangan || "-"}</TableCell>
                         <TableCell>{s.alamat}</TableCell>
                         <TableCell>{s.nm_desa}</TableCell>
                         <TableCell>{s.nm_kecamatan}</TableCell>
