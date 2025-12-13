@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   try {
     const response = await fetch(
-      "http://103.196.116.97:81/api/data-korban/detail/list",
+      "http://103.196.116.97:81/api/data-korban/detail/list?limit=0",
       {
         method: "GET",
         headers: {
