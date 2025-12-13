@@ -51,8 +51,8 @@ export default function Sidebar({
   const allMenus = [
     { label: "Dashboard", icon: <Home size={18} />, href: "/dashboard", roles: ["ADMIN", "PETUGAS"] },
     { label: "Kejadian Bencana", icon: <Package size={18} />, href: "/kejadian", roles: ["ADMIN"] },
-    { label: "Data Korban", icon: <Users size={18} />, href: "/korban", roles: ["ADMIN"] },
-    { label: "Data Rumah", icon: <Home size={18} />, href: "/rumah", roles: ["ADMIN"] },
+    { label: "Data Korban", icon: <Users size={18} />, href: "/datakorban", roles: ["ADMIN"] },
+    { label: "Data Rumah", icon: <Home size={18} />, href: "/datarumah", roles: ["ADMIN"] },
     { label: "Profil", icon: <User size={18} />, href: "/profile", roles: ["ADMIN", "PETUGAS"] },
     { label: "Pengguna", icon: <Settings size={18} />, href: "/users", roles: ["ADMIN"] },
     { label: "Posko", icon: <Home size={18} />, href: "/posko", roles: ["ADMIN"] },
