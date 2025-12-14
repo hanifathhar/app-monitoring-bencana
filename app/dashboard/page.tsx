@@ -373,9 +373,6 @@ export default function DashboardPage() {
                 <div className="bg-white p-3 rounded-lg shadow border text-sm">
                   <p className="font-semibold">{d.name}</p>
                   <p>Total: {d.value}</p>
-                  <p className="text-gray-500">
-                    {(d.percent * 100).toFixed(1)}%
-                  </p>
                 </div>
               );
             }}
