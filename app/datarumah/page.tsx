@@ -114,7 +114,7 @@ export default function DataRumahPage() {
 
   useEffect(() => {
     const fetchKecamatan = async () => {
-      const res = await fetch("/api/kecamatan");
+      const res = await fetch("/api/ref-kecamatan");
       const data = await res.json();
       setKecamatanList(data);
     };
@@ -130,7 +130,7 @@ export default function DataRumahPage() {
       }
 
       try {
-        const res = await fetch("/api/desa");
+        const res = await fetch("/api/ref-desa");
         const allDesa = await res.json();
         
         const kecamatanObj = kecamatanList.find(k => k.nm_kecamatan === filterKecamatan);
