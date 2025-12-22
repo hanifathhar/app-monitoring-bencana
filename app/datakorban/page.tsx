@@ -207,7 +207,7 @@ export default function SurveyPage() {
 
   useEffect(() => {
   const fetchKecamatan = async () => {
-    const res = await fetch("/api/kecamatan");
+    const res = await fetch("/api/ref-kecamatan");
     const data = await res.json();
     setKecamatanList(data);
   };
@@ -225,7 +225,7 @@ export default function SurveyPage() {
       }
 
       try {
-        const res = await fetch("/api/desa");
+        const res = await fetch("/api/ref-desa");
         const allDesa = await res.json();
         
         // Filter desa berdasarkan kecamatan yang dipilih
