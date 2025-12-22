@@ -1,18 +1,33 @@
 ### POST USER
-POST http://localhost:3000/api/korban
+POST http://localhost:3000/api/posko
 Content-Type: application/json
 
 {
-  "nama_korban": "Suparno",
-  "jk": "L",
-  "umur": 45,
-  "id_kejadian": 7,
-  "status": "Hilang"
+  "nm_posko": "POSKO I WILAYAH BENCANA KEC. SIPIROK",
+  "id_kecamatan": 1,
+  "id_desa": 53
+}
+
+### POST USER
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "nama": "Abdul Hanif Athhar",
+  "username": "admin",
+  "password": "admin123",
+  "id_posko": 1,
+  "role": "ADMIN"
 }
 
 
 ### LOGIN USER
-GET http://localhost:3000/api/ringkasan-perkecamatan
+GET http://localhost:3000/api/kecamatan
+
+### LOGIN USER
+GET http://localhost:3000/api/rekap
+
+
 
 ### UPDATE
 PUT http://localhost:3000/api/kejadian/7
@@ -28,4 +43,4 @@ Content-Type: application/json
 }
 
 ### DELETE posko
-DELETE http://localhost:3000/api/auth/register/5
+GET http://localhost:3000/api/ringkasan-perkecamatan
